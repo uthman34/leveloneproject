@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    body {
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .Resourcesdrop:hover {
+        background-color: white;
+        color: blue;
+    }
+    .droplet-parent:hover .droplet{
+        display: block !important;
+    }
+    .signbtn:hover {
+        border-color: gray;
+        box-shadow: 1px 1px 3px gray;
+    }
+
+    .cardhover {
+        display: none !important;
+    }
+
+    .cardhoverparent:hover .cardhover {
+        display: block !important;
+    }
+
+    .scrollbtns {
+        overflow-x:auto;
+        white-space: nowrap;
+    }
+
+    .scrollbtns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbtnsbutton {
+        /* background-image: url(./1c5a8f235279613.Y3JvcCwxMDA3LDc4OCwxOTcsMA.jpg); */
+        width: 100px;
+        height: 40px;
+    }
+
+    .scrollbtnsbutton:hover {
+        background-color: rgba(0, 0, 255) !important;
+        white-space: nowrap;
+    }
+</style>
+
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-body-light shadow p-3  bg-body rounded position-fixed top-0 w-100"
+        style="z-index: 5; background-color: white;">
+        <div class="container-fluid gap-2">
+            <a class="navbar-brand fw-bolder" href="#">Behance </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item gap-4">
+                        <a class="nav-link active text-decoration-underline fw-bold" aria-current="page"
+                            href="../EXPLORE PAGE/index.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Overview</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Career Guides</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Commissioned Projects</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Creative Apprenticeship</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="droplet-parent nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="../HIRE PAGE/hire.html" role="button" 
+                            aria-expanded="false">
+                            Hire
+                        </a>
+                        <ul class="droplet dropdown-menu">
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#"><i
+                                        class="bi bi-building-dash me-2"></i>Hiring Dashboard</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#"><i
+                                        class="bi bi-search me-2"></i>Hiring on Behance</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#"><i
+                                        class="bi bi-exclamation-circle me-2"></i>Freelancers</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-normal" href="#"><i
+                                        class="bi bi-plus-circle me-2"></i>Create New Job</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="Resourcesdrop dropdown-item fw-light" href="#">Logo Designers</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-light" href="#">Brand Designers</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-light" href="#">Website Designers</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-light" href="#">Illustrators</a></li>
+                            <li><a class="Resourcesdrop dropdown-item fw-light" href="#">SSocial Media Designers</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-md-flex gap-2" role="search">
+                    <button class="btn  px-4 boarder rounded-5 " style=" color: white; background-color: blue;"
+                        type="submit"><a href="../start free trail/startfree.html" style="color: white; text-decoration: none;">Start Free Trial</a></button>
+                    <button type="button" class="btn btn-outline-primary px-3 boarder rounded-5">Sign In</button>
+                    <button class="btn btn-outline-black boarder boarder-none" type="submit"><i
+                            class="bi bi-anthropic me-2"></i>Adobe</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- section 1 -->
+    <section class=" container-fluid align-items-center row d-flex d-none d-lg-block col-12 m-0 "
+        style="height: 70vh; background-color: lightgray;">
+        <div class="row" style="height: 70vh;">
+
+            <div class="col-3  position-relative" style="height: 70vh;">
+                <!-- <div style="position: absolute;top: 0; buttom:0; background-color: black; z-index: 4;"></div> -->
+                <div class="" width="150px" height="150px" style="position: absolute; top:100px; left: 0px;">
+                    <img src="./section 1/1.webp" alt="" width="150px" height="150px">
+                </div>
+                <div style="position: absolute; top:100px; left: 180px;">
+                    <img src="./section 1/2.webp" alt="" width="100px" height="100px">
+                </div>
+                <div style="position: absolute; top:230px; left: 180px;">
+                    <img src="./section 1/3.webp" alt="" width="200px" height="200px">
+                </div>
+                <div style="position: absolute; top:280px; left: 10px;">
+                    <img src="./section 1/5.webp" alt="" width="150px" height="150px">
+                </div>
+                <div style="position: absolute; top:440px; left: 40px;">
+                    <img src="./section 1/6.webp" alt="" width="150px" height="150px">
+                </div>
+                <div style="position: absolute; top:450px; left: 200px;">
+                    <img src="./section 1/1.webp" alt="" width="100px" height="100px">
+                </div>
+
+                <div
+                    style="position: absolute; top:0; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.246);">
+                </div>
+            </div>
+
+            <div class="col-6  align-items-center d-flex flex-column justify-content-center gap-3"
+                style="height: 70vh; background-color: lightgray;">
+                <p class="fw-bolder " style="font-size: 4rem; text-align: center; ">The World’s <br> <span
+                        class="text-primary " style="margin-top: -10px;">Best Creators</span> <br> Are On Behance</p>
+                <p class="fw-light fs-5 m-0" style=" text-align: center; ">A comprehensive platform to help hirers and
+                    creators <br>navigate the creative world from discovering inspiration, <br> to connecting with one
+                    another</p>
+                <div>
+                    <button class="btn btn-primary px-4 boarder rounded-5 " style="" type="submit">Join Behance</button>
+                    <button type="button" class="btn btn-outline-primary rounded-5 px-4 boarder " style="">Explore
+                        Work</button>
+                </div>
+            </div>
+            <div class="col-3 position-relative">
+                <div
+                    style="position: absolute; top: 0; buttom:0;right: 0; left: 0; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.353); background-blend-mode: overlay; z-index: 4;">
+                </div>
+                <div>
+                    <img src="./section 1/sec-7.webp" alt="" width="100px;" height="100px;"
+                        style="position: absolute; top:130px; left: 230px;">
+                </div>
+                <div>
+                    <img src="./section 1/sec-8.webp" alt="" width="150px;" height="150px;"
+                        style="position: absolute; top:100px; left: 345px;">
+                </div>
+                <div>
+                    <img src="./section 1/sec-9.webp" alt="" width="150px;" height="150px;"
+                        style="position: absolute; top:270px; left: 310px;">
+                </div>
+                <div>
+                    <img src="./section 1/sec-10.webp" alt="" width="100px;" height="100px;"
+                        style="position: absolute; top:270px; left: 200px;">
+                </div>
+                <div>
+                    <img src="./section 1/sec-11.webp" alt="" width="150px;" height="150px;"
+                        style="position: absolute; top:440px; left: 250px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- filter section -->
+
+    <div class="d-flex bg-body-light shadow p-3  bg-body rounded  w-100 gap-3 align-items-center"
+        style="z-index: 5; background-color: white;">
+        <button type="button" class="btn btn-light d-flex rounded-5 px-4"><i
+                class="bi bi-sliders me-2"></i>Filter</button>
+        <div class="input-group">
+            <input type="text" class="form-control boarder-none rounded-5" placeholder="Search Behance..."
+                aria-label="Recipient’s username with two button addons">
+            <div class=" gap-2 d-none d-lg-flex">
+                <button type="button" class="btn btn-light  text-center  boarder rounded-5 ms-auto"
+                    style="font-size: xx-small; width: 100px;  ">Projects</button>
+                <button type="button" class="btn btn-light   text-center  boarder rounded-5 ms-auto"
+                    style="font-size: xx-small; width:100px ;  ">People</button>
+                <button type="button" class="btn btn-light  text-center  boarder rounded-5 ms-auto"
+                    style="font-size: xx-small; width: 100px;   ">Assets</button>
+                <button type="button" class="btn btn-light  text-center  boarder rounded-5 ms-auto"
+                    style="font-size: xx-small; width: 100px;   ">Images</button>
+            </div>
+
+        </div>
+
+        <!-- Example single danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-outline-white dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border: none;"><i class="bi bi-filter"></i>Recommended</button>
+            <ul class="dropdown-menu">
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Recommended<i
+                            class="bi bi-check2 ms-3"></i></a></li>
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Cura ted</a></li>
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Most Appreciated</a></li>
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Most Viewed</a></li>
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Most Discussed</a></li>
+                <li><a class="Resourcesdrop dropdown-item fw-normal" href="#">Most Recent</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- over-flow buttons -->
+    <div class="scrollbtns  d-flex gap-3 p-3 m-3 w-100 m-0">
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">For You</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Following</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Best of
+            Behance</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Graphic
+            Design</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Photography</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Illustration</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">UI/UX</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Architecture</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Product
+            Design</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">FashionDark</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Advertising</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Fine
+            Arts</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Crafts</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Game
+            Design</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Sound</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Creative
+            Challenges</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Photoshop</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Lightroom</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Illustrator</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">InDesign</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">XD</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Premiere
+            Pro</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">After
+            Effects</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Illustrator</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Architecture</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Product
+            Design</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">FashionDark</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Advertising</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Fine
+            Arts</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Crafts</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Game
+            Design</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Sound</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Creative
+            Challenges</button>
+        <button type="button" class="scrollbtnsbutton  btn   px-4 boarder "
+            style="border-radius: 5px !important; background-color: black; opacity: 0.7; color: white;">Photoshop</button>
+    </div>
+    <!-- mb-5 mt-5 image -->
+    <div class="bigcontainers row d-flex justify-content-between col-12 m-0 mt-3">
+        <div class=" mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/welcome-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">LA Galerie Museum | Brand <br> identity</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/bag-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/animated-kingdom-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Tev</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/animated-female-player-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">CIRQUE DU SOLEIL PAR <br> AUDREY ST-LAURENT</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/animated-restaurant.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">La Pepa</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/bakers-bread-md.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">C'EST ARCHISIMPLE (n°7)</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>/
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/bag-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New foldeR/beach-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Amics del Clínic</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/blue-car-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">ANTI-ROBOT CLUB</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/chinise-md.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Credit Debit</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/couple-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">IGC INSTITUTE OF GLOBAL <br> CITIZENSHIP</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/days-of-summer.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">LOGOS & MARKS VOL. 7</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/fine-lady-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Glafio – Modern Sans Serif <br> Inktrap</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/green-car-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Ola Friend</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/hill-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Mystérieuses Constellations <br> (Fleurus) — Book</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/sunshine-flower-md.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">CARBO - Brand Book for Bead <br> Manufacturing</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/orange-juice.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Liquefied Light</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/pad-md.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Not All Architecture</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/real-barrier-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Logo Collection Vol.1</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./New folder/welcome-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./image section/butter.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./image section/faina-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 position-relative cardhoverparent "
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./image section/card-hand-md.jpg" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5 mt-5 col-lg-2 col-md-4 col-sm-6 col-12 cardhoverparent position-relative"
+            style="height: 350px;">
+            <div style="width:92%; height: inherit; background-color: rgba(0, 0, 0, 0.339);"
+                class="cardhover position-absolute top-0 buttom-0 right-0 ">
+                <div class="w-100  d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark d-flex rounded-5 px-3 align-items-center"
+                        style="height: 30px;"><i class="bi bi-floppy2-fill me-2"></i>Save</button>
+                    <div class="d-flex gap-2 align-items-center">
+                        <img src="./New folder/network.png" alt="" height="40px" width="30px">
+                        <img src="./image section/after-effects.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <img src="./image section/logofolio-md.png" alt="" width="100%" height="100%">
+            <div>
+                <div class="d-flex justify-content-between p-2">
+                    <p class="fw-bold " style="font-size:small;">Rokka´s Trading</p>
+                    <div class="d-flex gap-3">
+                        <p>16<i class="bi bi-hand-thumbs-up-fill"></i></p>
+                        <p>32<i class="bi bi-eye-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form-bottom -->
+    <div class="container-fluid d-flex justify-content-center align-items-center p-5 text-center m-0"
+        style="background-color: #ffffff;">
+        <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+            <p class="fw-bold fs-5">Sign in to search the world's largest <br> creative network</p>
+            <button class="signbtn btn  border rounded-5 fs-6 px-5 "
+                style="background-color: #ffffff; border-color: lightblue;"> <i class="bi bi-google me-3"></i>Continue
+                with Google</button>
+            <button class="signbtn btn  border rounded-5 fs-6 px-5 "
+                style="background-color: #ffffff; border-color: lightblue;"> <i
+                    class="bi bi-facebook text-info me-3"></i>Continue with Facebook</button>
+            <button class="signbtn btn  border rounded-5 fs-6 px-5 "
+                style="background-color: #ffffff; border-color: lightblue;"> <i class="bi bi-apple me-3"></i>Continue
+                with Apple</button>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Veiw more</a>
+            <p class="fw-bold">OR</p>
+            <p class="fw-bold fs-5" style="margin-right: 25%;">Continue with email</p>
+            <p class="fw-bold " style="margin-right: 55%; font: 0.8em sans-serif;">Email address</p>
+            <form class="d-flex flex-column gap-3" role="search">
+                <input class="form-control w-100 px-5" type="search" placeholder=""
+                    style="border-radius: 10px; border-color: black;">
+                <button type="button" class="btn btn-dark w-25 pe-5 text-center  boarder rounded-5 ms-auto"
+                    style="font-size: xx-small;">Continue</button>
+
+        </div>
+    </div>
+    <!-- shining line  -->
+    <div>
+        <img src="./section 1/creator-pro-upsell-banner-border.webp" alt="" width="100%" height="3px">
+    </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center text-center m-0"
+        style="background-color: #f5f5f5;">
+        <p class="fw-bold">Upgrade to Behance Pro today: <span class="fw-normal"> Get advanced analytics, a custom
+                portfolio website, and more features to grow your creative career.</span> <span
+                class="text-primary ms-1"> Start your 7 day free trial</span> </p>
+    </div>
+    <!-- footer content -->
+    <footer class="container-fluid row d-flex justify-start align-items-sart  text-center m-0 text-white"
+        style="background-color: black;">
+        <div class="row p-5 gap-3 align-items-start mb-5">
+            <div class="col-12  col-md-12 col-lg-3 d-flex flex-column justify-content-start  ">
+                <p class="fw-bolder fs-3">Behance</p>
+            </div>
+            <div class="col-12 col-md-5 col-lg-2 d-flex flex-column justify-content-center  gap-3">
+                <a href="#" class="text-decoration-none  text-white mb-3 fw-bold fs-5"> Built For Creatives</a>
+                <a href="#" class="text-decoration-none  text-white">Try Behance Pro</a>
+                <a href="#" class="text-decoration-none  text-white">Find Inspiration</a>
+                <a href="#" class="text-decoration-none  text-white">Get Hired</a>
+                <a href="#" class="text-decoration-none  text-white">Sell Creative Assets</a>
+                <a href="#" class="text-decoration-none  text-white">Sell Freelance Services</a>
+            </div>
+            <div class="col-12 col-md-5 col-lg-2 d-flex flex-column justify-content-center  gap-3">
+                <a href="#" class="text-decoration-none  text-white mb-3 fw-bold fs-5"> Find Talent</a>
+                <a href="#" class="text-decoration-none  text-white">Post a Job</a>
+                <a href="#" class="text-decoration-none  text-white">Graphic Designers</a>
+                <a href="#" class="text-decoration-none  text-white">Video Editors</a>
+                <a href="#" class="text-decoration-none  text-white">Web Designers</a>
+                <a href="#" class="text-decoration-none  text-white">Photographers</a>
+                <a href="#" class="text-decoration-none  text-white">Illustrators</a>
+            </div>
+            <div class="col-12 col-md-5 col-lg-2 d-flex flex-column justify-content-center  gap-3">
+                <a href="#" class="text-decoration-none  text-white mb-3 fw-bold fs-5"> Behance</a>
+                <a href="#" class="text-decoration-none  text-white">About Behance</a>
+                <a href="#" class="text-decoration-none  text-white">Adobe Portfolio</a>
+                <a href="#" class="text-decoration-none  text-white">Download the App</a>
+                <a href="#" class="text-decoration-none  text-white">Careers</a>
+                <a href="#" class="text-decoration-none  text-white">Help Center</a>
+                <a href="#" class="text-decoration-none  text-white">Contact Us</a>
+                <a href="#" class="text-decoration-none  text-white">Login</a>
+            </div>
+            <div class="col-12 col-md-5 col-lg-2 d-flex flex-column justify-content-center  gap-3">
+                <a href="#" class="text-decoration-none  text-white mb-3 fw-bold fs-5"> Social</a>
+                <a href="#" class="text-decoration-none  text-white"><i class="bi bi-instagram me-2"></i>Instagram</a>
+                <a href="#" class="text-decoration-none  text-white"><i class="bi bi-twitter me-2"></i>Twitter</a>
+                <a href="#" class="text-decoration-none  text-white"><i class="bi bi-pinterest me-2"></i>Pinterest</a>
+                <a href="#" class="text-decoration-none  text-white"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                <a href="#" class="text-decoration-none  text-white"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+            </div>
+        </div>
+        <div class="w-75 d-flex mx-auto align-items-center progress-bar bg-white" style="width: 100%">
+            <div class="progress-bar-fill" style="width: 100%; height: 2px; background-color: lightblue;"></div>
+        </div>
+        <div class="d-flex  justify-content-between p-3 col-10  mx-auto align-items-center flex-column flex-md-row">
+            <div class="d-flex gap-3 align-items-center flex-column flex-md-row">
+                <button class="btn btn-outline-white text-white" type="submit"><i
+                        class="bi bi-anthropic me-2"></i>Adobe</button>
+                <p class="fw-light" style="font-size: small;">© 2024 Adobe. All rights reserved.</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center flex-column flex-md-row">
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">Privacy</a>
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">TOU</a>
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">Privacy</a>
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">Community</a>
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">Cookie
+                    preferences</a>
+                <a href="#" class="text-decoration-none  text-white fw-light" style="font-size: small;">Do not sell or
+                    share my personal information</a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- <h1 js cdn</h1> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

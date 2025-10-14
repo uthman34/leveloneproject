@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(240, 242, 243) !important;
+}
+.undernav-btn:hover {
+    background-color: #f5f8ff !important;
+    color: blue !important;
+}
+.undernav::-webkit-scrollbar {
+        display: none !important;
+    }
+    .imageer-con:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .imageer-con:hover .imageer{
+    display: block !important;
+    }
+
+    .testimonyCard .card {
+        flex: 0 0 auto !important;
+    }
+    .testimonyCard::-webkit-scrollbar{
+        display: none !important;
+    }
+    .droplet-parent:hover .droplet{
+        display: block !important;
+    }
+    /* .imageer
+    @keyframes imageerhover {
+        from{
+            transform: scale(1);
+        }
+        50%{
+{
+            transform: scale(1);
+        }
+    }        */
+
+    /* keyframe for card image */
+    @media (min-width:350px) and (max-width:900px ){
+        .image-con{
+            display: flex !important;
+            overflow-x: auto !important;
+        }
+        .image-con2{
+            display: none !important;
+        }
+        .image-con::-webkit-scrollbar {
+        display: none !important;
+    }
+    .phire{
+        font-size: 2.5rem !important;
+        line-height: 40px !important;
+    }
+    .pskip{
+        font-size: 0.8rem !important;
+    }
+    .hiret{
+        font-size: 2rem !important;
+    }
+}
+
